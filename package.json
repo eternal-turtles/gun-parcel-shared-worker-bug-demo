@@ -1,0 +1,21 @@
+{
+  "name": "gun-parcel-shared-worker-bug-demo",
+  "description": "",
+  "license": "",
+  "author": "",
+  "files": [
+    "dist/*"
+  ],
+  "source": "src/index.html",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "parcel": "parcel",
+    "build": "npm run clean && npm run parcel build src/index.html",
+    "start": "npm run clean && npm run parcel src/index.html --open"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "gun": "^0.2020.1239",
+    "parcel": "^2.9.3"
+  }
+}
